@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("signup").addEventListener("click", function () {
     window.location.href = "Signup.html";
   });
-
- 
 });
 
 function handlereturn(event) {
