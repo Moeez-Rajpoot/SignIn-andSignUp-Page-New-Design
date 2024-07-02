@@ -12,9 +12,9 @@ Here are some screenshots from the application:
 
 ### Signup Page
 
-![Signup Page]()
+![Signup Page](https://github.com/Moeez-Rajpoot/SignIn-andSignUp-Page-New-Design/blob/main/Signup%20image.png)
 
 ### Welcome Page After LogIn
 
-![Welcome Page]([path/to/welcome.jpg](https://github.com/Moeez-Rajpoot/SignIn-andSignUp-Page-New-Design/blob/main/Welcome%20image.png))
+![Welcome Page](https://github.com/Moeez-Rajpoot/SignIn-andSignUp-Page-New-Design/blob/main/Welcome%20image.png)
 
