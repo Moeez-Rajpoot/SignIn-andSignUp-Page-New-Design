@@ -27,29 +27,33 @@
           <div class="input-field">
             <label class="input-label" for="Username">Username:</label>
             <input
+              oninput="handleUsernameCheck(event)"
               placeholder="Enter Text"
               type="text"
               id="Username"
               name="Username"
               required
             />
-            <p style="display: none;" id="error-message" class="Error">Invalid Username !</p>
+            <p style="display: none;" id="error-message" class="Error"></p>
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Password">Password:</label>
             <input
+              oninput="handlePasswordCheck(event)"
               placeholder="Password"
               type="password"
               id="Password"
               name="Password"
               required
             />
+            <p style="display: none;" id="passwordStrength" class="Error"></p>
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Email">Email:</label>
             <input
+
               placeholder="Email"
               type="email"
               id="Email"
@@ -62,25 +66,28 @@
           <div class="input-field">
             <label class="input-label" for="Phone">Phone:</label>
             <input
+              oninput="handlePhoneCheck(event)"
               placeholder="Phone"
-              type="number"
+              type="tel"
               id="Phone"
               name="Phone"
               required
             />
+            <p style="display: none;" id="phonecheck" class="Error"></p>
           
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Cnic">CNIC:</label>
             <input
+              oninput="handleCnicCheck(event)"
               placeholder="CNIC"
               type="number"
               id="Cnic"
               name="Cnic"
               required
             />
-          
+            <p style="display: none;" id="cniccheck" class="Error"></p>
           </div>
 
           <div class="input-field">
