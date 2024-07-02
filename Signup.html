@@ -28,72 +28,68 @@
             <label class="input-label" for="Username">Username:</label>
             <input
               oninput="handleUsernameCheck(event)"
-              placeholder="Enter Text"
+              placeholder="Enter Username"
               type="text"
               id="Username"
               name="Username"
               required
             />
-            <p style="display: none;" id="error-message" class="Error"></p>
+            <p style="display: none" id="error-message" class="Error"></p>
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Password">Password:</label>
             <input
               oninput="handlePasswordCheck(event)"
-              placeholder="Password"
+              placeholder="Enter Password"
               type="password"
               id="Password"
               name="Password"
               required
             />
-            <p style="display: none;" id="passwordStrength" class="Error"></p>
+            <p style="display: none" id="passwordStrength" class="Error"></p>
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Email">Email:</label>
             <input
-
-              placeholder="Email"
+              placeholder="Enter Email"
               type="email"
               id="Email"
               name="Email"
               required
             />
-        
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Phone">Phone:</label>
             <input
               oninput="handlePhoneCheck(event)"
-              placeholder="Phone"
+              placeholder="Enter Phone"
               type="tel"
               id="Phone"
               name="Phone"
               required
             />
-            <p style="display: none;" id="phonecheck" class="Error"></p>
-          
+            <p style="display: none" id="phonecheck" class="Error"></p>
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Cnic">CNIC:</label>
             <input
               oninput="handleCnicCheck(event)"
-              placeholder="CNIC"
+              placeholder="Enter CNIC"
               type="number"
               id="Cnic"
               name="Cnic"
               required
             />
-            <p style="display: none;" id="cniccheck" class="Error"></p>
+            <p style="display: none" id="cniccheck" class="Error"></p>
           </div>
 
           <div class="input-field">
             <label class="input-label" for="Date">Date of Birth:</label>
             <input type="date" id="Date" name="Date" required /><br />
-            
           </div>
 
           <div class="input-field2">
@@ -105,7 +101,9 @@
           </div>
 
           <button class="btn-submit" type="submit">Sign Up</button>
-          <p id="para">Already have an account ? <span id="signin">Sign In</span></p>
+          <p id="para">
+            Already have an account ? <span id="signin">Sign In</span>
+          </p>
         </form>
       </div>
     </div>
