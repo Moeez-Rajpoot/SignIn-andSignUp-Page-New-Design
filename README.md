@@ -8,11 +8,11 @@ Here are some screenshots from the application:
 
 ### Login Page
 
-![Login Page]([path/to/login.jpg](https://github.com/Moeez-Rajpoot/SignIn-andSignUp-Page-New-Design/blob/main/Login%20image.png))
+![Login Page](https://github.com/Moeez-Rajpoot/SignIn-andSignUp-Page-New-Design/blob/main/Login%20image.png)
 
 ### Signup Page
 
-![Signup Page]([path/to/signup.jpg](https://github.com/Moeez-Rajpoot/SignIn-andSignUp-Page-New-Design/blob/main/Signup%20image.png))
+![Signup Page]()
 
 ### Welcome Page After LogIn
 
