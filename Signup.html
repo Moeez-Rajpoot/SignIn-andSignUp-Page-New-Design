@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="Signup.css" />
+    <script
+      src="https://kit.fontawesome.com/002e03edcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Signup.js"></script>
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="image">
+        Sign Up
+        <i class="fa-solid fa-right-to-bracket"></i>
+      </div>
+
+      <div class="form">
+        <h2>Create New Account</h2>
+        <form onsubmit="handleSubmit(event)">
+          <div class="input-field">
+            <input
+              placeholder="Username"
+              type="text"
+              id="Username"
+              name="Username"
+              required
+            /><br />
+          </div>
+
+          <div class="input-field">
+            <input
+              placeholder="Password"
+              type="password"
+              id="Password"
+              name="Password"
+              required
+            /><br />
+          </div>
+
+          <div class="input-field">
+            <input
+              placeholder="Email"
+              type="email"
+              id="Email"
+              name="Email"
+              required
+            /><br />
+          </div>
+
+          <div class="input-field">
+            <input
+              placeholder="Phone"
+              type="number"
+              id="Phone"
+              name="Phone"
+              required
+            /><br />
+          </div>
+
+          <div class="input-field">
+            <input
+              placeholder="CNIC"
+              type="number"
+              id="Cnic"
+              name="Cnic"
+              required
+            /><br />
+          </div>
+
+          <div class="input-field">
+            <p>Date of Birth</p>
+            <input type="date" id="Date" name="Date" required /><br />
+          </div>
+
+          <div class="input-field2">
+            <p>Select Gender :</p>
+            <select id="Gender" name="Gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <button class="btn-submit" type="submit">Sign Up</button>
+          <p>Already have an account ? <span id="signin">Sign In</span></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

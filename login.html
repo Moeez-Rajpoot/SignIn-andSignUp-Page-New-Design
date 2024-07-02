@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="Signup.css" />
+    <script
+      src="https://kit.fontawesome.com/002e03edcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Signup.js"></script>
+
+    <title>Sign In</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="image">
+        Sign In
+        <i class="fa-solid fa-right-to-bracket"></i>
+      </div>
+
+      <div class="login-form">
+        <h2>Login To Expore</h2>
+        <form onsubmit="handleSubmit(event)">
+          <div class="input-field">
+            <input
+              placeholder="Email"
+              type="email"
+              id="Email"
+              name="Email"
+              required
+            /><br />
+          </div>
+
+          <div class="input-field">
+            <input
+              placeholder="Password"
+              type="password"
+              id="Password"
+              name="Password"
+              required
+            /><br />
+          </div>
+
+      
+          <button class="btn-submit" onclick="handleLogin(event)">Sign In</button>
+          <p>Don't have an account ? <span id="signup">Sign Up</span></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
