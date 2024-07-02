@@ -1,6 +1,6 @@
-# Project Title
+# Login and SignUp
 
-SignIn and SignUp.
+SignIn and SignUp with data validations and using local storage to login the user.
 
 ## Screenshots
 
