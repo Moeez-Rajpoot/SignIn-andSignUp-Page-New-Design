@@ -1,0 +1,168 @@
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 30%;
+  height: 86%;
+  background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+.form {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  margin: 0;
+}
+
+.form h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-label {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  padding: 9px;
+  border-radius: 4px;
+}
+
+form {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+
+  height: fit-content;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+.input-field input {
+  padding: 5px;
+  padding-bottom: 10px;
+  border: none;
+  outline: none;
+  width: 90%;
+  margin-left: 4px;
+}
+
+.input-field input:focus {
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+.Error {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.6rem;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+#para{
+
+    margin-top: 2px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    
+    overflow: scroll;
+  }
+  .main-body {
+    height: fit-content;
+  }
+
+  .form {
+    width: 80%;
+    height: 100%;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .login-form {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    margin: 0;
+  }
+
+  .login-form h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media screen and (min-width: 1024px ) and (max-width: 1366px){
+
+    html {
+    
+        overflow: hidden;
+      }
+
+      .form {
+        width: 40%;
+        height: 100%;
+      }
+      
+    
+}

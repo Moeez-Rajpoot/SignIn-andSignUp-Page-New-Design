@@ -12,13 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function handlereturn(event) {
   event.preventDefault();
-  window.location.href = "Signup.html";
+  window.location.href = "login.html";
     
 }
 
 function handleSubmit(event) {
   event.preventDefault();
 
+  const errorMessage = document.getElementById("error-message");
   const username = document.getElementById("Username").value.trim();
   const password = document.getElementById("Password").value;
   const email = document.getElementById("Email").value;
@@ -28,6 +29,7 @@ function handleSubmit(event) {
   const Gender = document.getElementById("Gender").value;
 
   if (!username) {
+    errorMessage.style.display = "block";
     console.log("Please fill out the Username Correctly.");
     return;
   }
@@ -66,6 +68,7 @@ function handleSubmit(event) {
 
 function handleLogin(event){
     event.preventDefault();
+    const errorMessage = document.getElementById("error-credentials");
     const Email = document.getElementById("Email").value;
     const password = document.getElementById("Password").value;
 
@@ -75,6 +78,7 @@ function handleLogin(event){
         window.location.href = "Welcome.html";
     }
     else{
+      errorMessage.style.display = "block";
         console.log("Invalid Credentials");
     }
 

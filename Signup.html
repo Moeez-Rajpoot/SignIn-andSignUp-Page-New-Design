@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Linking the CSS file -->
     <link rel="stylesheet" href="Signup.css" />
+    <link rel="stylesheet" href="Common.css" />
     <script
       src="https://kit.fontawesome.com/002e03edcf.js"
       crossorigin="anonymous"
@@ -24,62 +25,72 @@
         <h2>Create New Account</h2>
         <form onsubmit="handleSubmit(event)">
           <div class="input-field">
+            <label class="input-label" for="Username">Username:</label>
             <input
-              placeholder="Username"
+              placeholder="Enter Text"
               type="text"
               id="Username"
               name="Username"
               required
-            /><br />
+            />
+            <p style="display: none;" id="error-message" class="Error">Invalid Username !</p>
           </div>
 
           <div class="input-field">
+            <label class="input-label" for="Password">Password:</label>
             <input
               placeholder="Password"
               type="password"
               id="Password"
               name="Password"
               required
-            /><br />
+            />
           </div>
 
           <div class="input-field">
+            <label class="input-label" for="Email">Email:</label>
             <input
               placeholder="Email"
               type="email"
               id="Email"
               name="Email"
               required
-            /><br />
+            />
+        
           </div>
 
           <div class="input-field">
+            <label class="input-label" for="Phone">Phone:</label>
             <input
               placeholder="Phone"
               type="number"
               id="Phone"
               name="Phone"
               required
-            /><br />
+            />
+          
           </div>
 
           <div class="input-field">
+            <label class="input-label" for="Cnic">CNIC:</label>
             <input
               placeholder="CNIC"
               type="number"
               id="Cnic"
               name="Cnic"
               required
-            /><br />
+            />
+          
           </div>
 
           <div class="input-field">
-            <p>Date of Birth</p>
+            <label class="input-label" for="Date">Date of Birth:</label>
             <input type="date" id="Date" name="Date" required /><br />
+            
           </div>
 
           <div class="input-field2">
-            <p>Select Gender :</p>
+            <label class="input-label" for="Gender">Select Gender:</label>
             <select id="Gender" name="Gender">
               <option value="Male">Male</option>
               <option value="Female">Female</option>
@@ -87,7 +98,7 @@
           </div>
 
           <button class="btn-submit" type="submit">Sign Up</button>
-          <p>Already have an account ? <span id="signin">Sign In</span></p>
+          <p id="para">Already have an account ? <span id="signin">Sign In</span></p>
         </form>
       </div>
     </div>

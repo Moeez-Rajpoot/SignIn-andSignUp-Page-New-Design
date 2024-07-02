@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Linking the CSS file -->
-    <link rel="stylesheet" href="Signup.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="Common.css" />
     <script
       src="https://kit.fontawesome.com/002e03edcf.js"
       crossorigin="anonymous"
@@ -24,6 +25,7 @@
         <h2>Login To Expore</h2>
         <form onsubmit="handleSubmit(event)">
           <div class="input-field">
+            <label class="input-label" for="Email">Email:</label>
             <input
               placeholder="Email"
               type="email"
@@ -31,9 +33,11 @@
               name="Email"
               required
             /><br />
+            
           </div>
 
           <div class="input-field">
+            <label class="input-label" for="Password">Password:</label>
             <input
               placeholder="Password"
               type="password"
@@ -41,9 +45,11 @@
               name="Password"
               required
             /><br />
+            
           </div>
+          <p style="display: none; margin-top: 10px; font-size: large;" id="error-credentials" class="Error">Invalid Credentials !</p>
 
-          <button class="btn-submit" onclick="handleLogin(event)">Sign In</button>
+          <button class="btn-submit-login" onclick="handleLogin(event)">Sign In</button>
           <p>Don't have an account ? <span id="signup">Sign Up</span></p>
         </form>
       </div>
