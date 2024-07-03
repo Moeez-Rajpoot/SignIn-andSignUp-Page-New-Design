@@ -7,11 +7,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #navbar{
 
-
-  position: relative;
+  overflow: hidden;
 }
 ul {
   list-style-type: none;
@@ -25,9 +23,9 @@ ul {
 }
 
 ul img {
-  margin-left: 10px;
-  height: 2.5rem;
-  width: 2.5rem;
+  margin-left: 30px;
+  height: 3rem;
+  width: 3rem;
   float: left;
   display: flex;
   justify-content: center;
@@ -37,6 +35,12 @@ ul img {
 
 li {
   float: right;
+  margin-right: 10px;
+}
+
+#last{
+
+  margin-right: 30px;
 }
 
 
@@ -46,16 +50,17 @@ li a {
   color: rgb(255, 255, 255);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  padding: 15px 16px;
+  padding: 18px 18px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
   background-color: #1111112e;
+  
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #154f96b8;
 }
 
 

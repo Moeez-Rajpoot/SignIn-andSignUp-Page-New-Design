@@ -9,14 +9,24 @@ document.addEventListener('DOMContentLoaded', function() {
         Logo2.style.display = "none";
     });
 
+    setActiveLink();
    
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-            links.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
 });
+
+function setActiveLink() {
+    const currentPage = window.location.href.split('/').pop();
+
+    const links = document.querySelectorAll('#ul li a');
+
+    links.forEach(link => {
+        const linkPage = link.getAttribute('href').split('/').pop();
+        link.classList.remove('active');
+
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+    });
+}
 
 window.addEventListener('resize', function() {
     const logo = document.getElementById('Logo');
@@ -33,24 +43,3 @@ window.addEventListener('resize', function() {
         menuul.style.display = 'none';
     }
 });
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    displayUsers();
-});
-
-function displayUsers() {
-    const usersContainer = document.getElementById('usersList');
-    // Assuming users are stored as a JSON string
-    const users = JSON.parse(localStorage.getItem('users')) || [];
-    
-    if (users.length > 0) {
-        users.forEach(user => {
-            const userElement = document.createElement('div');
-            userElement.textContent = `User: ${user.name}`; // Assuming each user object has a name property
-            usersContainer.appendChild(userElement);
-        });
-    } else {
-        usersContainer.textContent = 'No users found.';
-    }
-}

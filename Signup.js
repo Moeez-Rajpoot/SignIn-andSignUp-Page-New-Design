@@ -10,10 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function handlereturn(event) {
-  event.preventDefault();
-  window.location.href = "login.html";
-}
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -159,8 +155,6 @@ function handleLogin(event) {
 
  
   const credentialsArray = JSON.parse(localStorage.getItem("signupCredentials")) || [];
-
-  
   const credentialMatch = credentialsArray.find(cred => cred.email.toLowerCase() === Email.toLowerCase() && cred.password === password);
 
   if (credentialMatch) {
@@ -170,7 +164,6 @@ function handleLogin(event) {
     console.log("Invalid Credentials");
   }
 
-  
   document.getElementById("Email").value = "";
   document.getElementById("Password").value = "";
 }
