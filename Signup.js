@@ -164,7 +164,7 @@ function handleLogin(event) {
   const credentialMatch = credentialsArray.find(cred => cred.email.toLowerCase() === Email.toLowerCase() && cred.password === password);
 
   if (credentialMatch) {
-    window.location.href = "Welcome.html";
+    window.location.href = "Dashboard.html";
   } else {
     errorMessage.style.display = "block";
     console.log("Invalid Credentials");

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: fit-content;
+  background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navbar{
+
+
+  position: relative;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2a2929;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul img {
+  margin-left: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+li {
+  float: right;
+}
+
+
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #1111112e;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#Logo{
+
+  margin-left: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
+  float: left;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+}
+
+
+#Logo2{
+
+  margin-left: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+}
+
+
+.menu.active {
+  display: block !important;
+  flex-direction: column;
+
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+      display: block;
+      float: right;
+  }
+
+
+  .menu ul {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      position: relative;
+  }
+  li{
+
+    float: right;;
+  }
+
+  .menu.active {
+    display: block !important;
+    flex-direction: column;
+ 
+}
+  .menu ul li {
+      text-align: center;
+      width: 100%;
+      
+  }
+}
+
+

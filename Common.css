@@ -12,15 +12,18 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+ margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
 }
 
 .image {
   width: 30%;
-  height: 86%;
+  height: 80%;
   background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,19 +34,7 @@ html {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
 }
-.form {
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  width: 30%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  border: 1px solid rgba(0, 0, 0, 0.219);
-  margin: 0;
-}
 
 .form h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -59,7 +50,7 @@ html {
 
 form {
   width: 100%;
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +113,7 @@ form {
   }
   .main-body {
     height: fit-content;
+    margin-top: 0;
   }
 
   .form {
@@ -145,6 +137,7 @@ form {
 
     border: 1px solid rgba(0, 0, 0, 0.219);
     margin: 0;
+    margin-top: 0px;
   }
 
   .login-form h2 {
@@ -152,16 +145,47 @@ form {
   }
 }
 
-@media screen and (min-width: 1024px ) and (max-width: 1366px){
+@media screen and (min-width: 769px ) and (max-width: 1366px){
 
     html {
     
         overflow: hidden;
       }
 
-      .form {
-        width: 40%;
-        height: 100%;
+      .form{
+
+        height: 94%;
+        padding: 10px;
+        
+      }
+
+      .form h2{
+
+        font-size: medium;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .input-label{
+
+        font-size: small;
+      }
+
+      input{
+
+        font-size: small;
+      }
+
+      .btn-submit{
+
+        font-size: small;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      #para{
+
+        font-size: small;
       }
       
     
