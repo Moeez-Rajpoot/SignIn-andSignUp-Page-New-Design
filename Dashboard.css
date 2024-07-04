@@ -10,16 +10,20 @@ body {
 #navbar{
 
   overflow: hidden;
+  
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   overflow: hidden;
-  background-color: #2a2929;
+  background-color: #1b1c48;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99.92%;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.552);
 }
 
 ul img {
@@ -40,7 +44,7 @@ li {
 
 #last{
 
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 
@@ -48,19 +52,23 @@ li {
 li a {
   display: block;
   color: rgb(255, 255, 255);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 18px 18px;
   text-decoration: none;
+  
 }
 
 li a:hover:not(.active) {
   background-color: #1111112e;
+  border-radius: 0.5rem;
+  
   
 }
 
 .active {
   background-color: #154f96b8;
+  border-radius: 0.8rem;
 }
 
 
@@ -80,7 +88,7 @@ li a:hover:not(.active) {
   width: 2.5rem;
   float: left;
   
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 5px;
@@ -136,6 +144,23 @@ li a:hover:not(.active) {
       width: 100%;
       
   }
+
+  
+}
+
+@media screen and (max-width: 1666px) {
+
+  #Logo{
+
+    display: none;
+  }
+
+  .wel-body{
+
+    margin-top: 70px;
+  }
+  
+  
 }
 
 
